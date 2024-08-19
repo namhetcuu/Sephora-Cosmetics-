@@ -2,13 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-//frontend
+//Frontend
 Route::get('/', 'App\Http\Controllers\HomeController@index');
 Route::get('/trang-chu', 'App\Http\Controllers\HomeController@index');
 
 
 
-//backend
+
+//Backend
 Route::get('/admin', 'App\Http\Controllers\AdminController@index');
 Route::get('/dashboard', 'App\Http\Controllers\AdminController@show_dashboard');
 Route::get('/logout', 'App\Http\Controllers\AdminController@logout');
